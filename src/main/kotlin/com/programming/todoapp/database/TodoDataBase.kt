@@ -2,10 +2,10 @@ package com.programming.todoapp.database
 
 data class TodoDataBase (
     var index: Int=0,
-    var todoLists: MutableList<String> = mutableListOf()
+    var todoList: MutableList<Todo> = mutableListOf()
 ){
     fun init(){
-        this.todoLists = mutableListOf()
+        this.todoList = mutableListOf()
         println("[DEBUG] todo database init")
     }
 }
